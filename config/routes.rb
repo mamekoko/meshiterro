@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "homus#top"
+  root to: "homes#top"
+  get 'homes/about'
   get 'meshiterros/new'
   get 'meshiterros/index'
   get 'meshiterros/show'
